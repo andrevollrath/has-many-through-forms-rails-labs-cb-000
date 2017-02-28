@@ -1,1 +1,3 @@
-
+<% @user.comments.each do |c| %>
+  <p><%= link_to c.post.title, c.post %></p>
+<% end %>
